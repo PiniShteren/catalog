@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/web/static/css/main.193a3654.chunk.css",
+    "main.js": "/web/static/js/main.7414a2bf.chunk.js",
+    "main.js.map": "/web/static/js/main.7414a2bf.chunk.js.map",
+    "runtime-main.js": "/web/static/js/runtime-main.2fc54452.js",
+    "runtime-main.js.map": "/web/static/js/runtime-main.2fc54452.js.map",
+    "static/js/2.3b2d11cf.chunk.js": "/web/static/js/2.3b2d11cf.chunk.js",
+    "static/js/2.3b2d11cf.chunk.js.map": "/web/static/js/2.3b2d11cf.chunk.js.map",
+    "static/js/3.cb9e3967.chunk.js": "/web/static/js/3.cb9e3967.chunk.js",
+    "static/js/3.cb9e3967.chunk.js.map": "/web/static/js/3.cb9e3967.chunk.js.map",
+    "index.html": "/web/index.html",
+    "static/css/main.193a3654.chunk.css.map": "/web/static/css/main.193a3654.chunk.css.map",
+    "static/js/2.3b2d11cf.chunk.js.LICENSE.txt": "/web/static/js/2.3b2d11cf.chunk.js.LICENSE.txt",
+    "static/media/menu.db902d23.svg": "/web/static/media/menu.db902d23.svg",
+    "static/media/phone.c1f546fe.svg": "/web/static/media/phone.c1f546fe.svg",
+    "static/media/whatsapp.89094212.svg": "/web/static/media/whatsapp.89094212.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2fc54452.js",
+    "static/js/2.3b2d11cf.chunk.js",
+    "static/css/main.193a3654.chunk.css",
+    "static/js/main.7414a2bf.chunk.js"
+  ]
+}

@@ -1,0 +1,110 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 70vh;
+}
+.main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.details-child {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	margin: 0 auto;
+	width: 30vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 1vh 1.5vh 1vh 1.5vh;
+	margin-top: 1vh;
+	font-size: 2.5vh;
+	border-radius: 1vh;
+	box-shadow: 0px 2px 3px black;
+}
+.from {
+	width: 40%;
+	padding: 3vh;
+}
+.content-details {
+	width: 40%;
+}
+.from from {
+	display: flex;
+	flex-direction: column;
+}
+#content-h2 {
+	margin-bottom: 3vh;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#input {
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 1vh;
+	padding: 1vh 1vh 1vh 0vh;
+	border: none;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	border-radius: 1vh;
+	box-shadow: 0px 2px 3px black;
+}
+#input:focus {
+	border: none;
+	outline: none;
+	box-shadow: 0px 0px 5px rgb(64, 34, 121), 0 0 7px;
+}
+textarea {
+	resize: none;
+	/* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+}
+#button-send {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	margin: 0 auto;
+	width: 30%;
+	padding: 1vh 0vh 1vh 0vh;
+	margin-top: 1vh;
+	border: none;
+	border-radius: 1vh;
+	box-shadow: 0px 2px 3px black;
+	cursor: pointer;
+}
+#button-send:active {
+	background-color: rgb(167, 167, 167);
+	color: white;
+	opacity: 0.3;
+}
+#button-send:focus {
+	outline: none;
+}
+.whats {
+	cursor: pointer;
+	width: 100%;
+	background: none;
+	border: none;
+	display: flex;
+	justify-content: center;
+}
+.whats:focus {
+	outline: none;
+}
+#link-phone {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5vh;
+	font-weight: bold;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media only screen and (max-width: 800px) {
+	.from {
+		width: 80%;
+	}
+	.content-details {
+		width: 60%;
+	}
+}
