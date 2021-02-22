@@ -35,7 +35,7 @@ export default function Contect() {
                     <a id="link-phone" href="tel:0544936366">
                         <div className="details-child">
                             054-493-6366
-                        <img src={Phone} width="15vh" />
+                        <img src={Phone} width="16vh" style={{ marginLeft: '0.4vh' }} />
                         </div>
                     </a>
                 </div>
