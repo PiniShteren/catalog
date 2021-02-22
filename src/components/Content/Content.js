@@ -40,7 +40,7 @@ export default function Contect() {
                     </a>
                 </div>
                 <div className="from">
-
+                    <h2>שלח אימייל</h2>
                     <form
                         onSubmit={sendEmail}
                     >
