@@ -24,14 +24,14 @@ export default function Contect() {
     return (
         <div className="content">
             <div className="top-content">
-                <h2 id="content-h2">יצירת קשר</h2>
+                <h2 id="content-h2">צור קשר</h2>
             </div>
             <div className="main-content">
                 <div className="content-details">
                     <ReactWhatsapp className="whats" number="+972544936366" >
                         <div className="details-child">
                             972-054-493-6366+
-                        <img src={WhatsApp} alt="img" width="15vh" />
+                        <img src={WhatsApp} alt="img" width="19vh" />
                         </div>
                     </ReactWhatsapp>
                     <a id="link-phone" href="tel:0544936366">
