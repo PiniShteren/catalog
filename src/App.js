@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { createRef, useEffect, useState } from 'react';
 import './App.css';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Data from "./components/data/doors.json";
@@ -17,7 +17,14 @@ function App() {
   const [flag, setFalg] = useState(false);
   const [index, setIndex] = useState(0);
   const [scroll, setScroll] = useState(0);
-
+  const [marginTop, setMarginTop] = useState(0);
+  const [marginBottom, setMarginBottom] = useState(0);
+  const sendMarginTop = (width) => {
+    setMarginTop(width + 5);
+  }
+  const sendMarginBottom = (width) => {
+    setMarginBottom(width + 5);
+  }
   const search = (e) => {
     if (e) {
       let searchData = data.filter((element) => element.NAME.indexOf(e) >= 0);
@@ -38,9 +45,9 @@ function App() {
     <div className="App">
       <Router>
         <div className="Head">
-          <Header search={search} />
+          <Header search={search} sendMarginTop={sendMarginTop} />
         </div>
-        <div className="body">
+        <div className="body" style={{ marginTop: `${marginTop}px`, marginBottom: `${marginBottom}px` }}>
           <Switch>
             <Route exact path="/" component={() => {
               return <Home data={dataToPrint} />
@@ -60,7 +67,7 @@ function App() {
           </Switch>
         </div>
         <div className="foot">
-          <Footer />
+          <Footer sendMarginBottom={sendMarginBottom} />
         </div>
       </Router>
     </div>

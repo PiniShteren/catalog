@@ -67,11 +67,17 @@ nav {
 	height: 5vh;
 	background-image: url("../images/facebook.svg");
 	background-size: contain;
+	text-decoration: none;
 }
 #img-face:hover {
 	background-image: url("../images/facebookHover.svg");
 	background-size: contain;
 }
+/* #face-link {
+	text-decoration: line-through;
+	background-color: aqua;
+} */
+
 .menu {
 	padding: 2vh 0vh 0vh 2vh;
 }

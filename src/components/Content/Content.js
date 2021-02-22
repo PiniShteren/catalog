@@ -11,8 +11,6 @@ export default function Contect() {
     function sendEmail(e) {
         debugger
         e.preventDefault();
-        console.log(e.target);
-
         emailjs.sendForm('service_zlxxzw9', 'template_4l9e5or', e.target, 'user_aqT1uN67A9RZMPqrpktio')
             .then((result) => {
                 console.log(result.text);

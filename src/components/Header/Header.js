@@ -18,7 +18,7 @@ export default function Header(props) {
     useEffect(
         () => {
             setTop(ref.current.offsetHeight);
-            console.log(top);
+            props.sendMarginTop(top);
         }
     )
 
@@ -56,7 +56,7 @@ export default function Header(props) {
                 <NavLink className="NavLink-item" activeStyle={{ boxShadow: "3px 3px 5px grey", borderRadius: "3vh", fontWeight: "bold" }} to="/about">אודות</NavLink>
             </nav>
             <div className="facebook">
-                <a href="https://www.facebook.com/pini859"><div id="img-face"></div></a>
+                <a id="face-link" href="https://www.facebook.com/pini859"><div id="img-face"></div></a>
             </div>
             <div className="menu">
                 <img src={Menu} alt="menu" width="30vh" onClick={openMenue} />
