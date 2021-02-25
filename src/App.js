@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Data from "./components/data/doors.json";
@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer";
 import Product from "./components/Product/Product";
 
 function App() {
-
+  const [exmpleArr, setExmpleArr] = useState([]);
   const [data, setData] = useState(Data.catalog);
   const [dataToPrint, setDataToPrint] = useState(Data.catalog);
   const [flag, setFalg] = useState(false);
@@ -41,6 +41,24 @@ function App() {
     setIndex(i);
     setScroll(windowScroll);
   }
+  const exmpleProducts = () => {
+    debugger
+    setExmpleArr([]);
+    for (let i = 0; i < 3; i++) {
+      let rand = Math.round(Math.random() * data.length - 1);
+      let objProducts = data[rand];
+      objProducts.index = rand
+      console.log(data[rand]);
+      setExmpleArr([...exmpleArr, objProducts])
+    }
+    // return exmplArr.map((e))
+  }
+  useEffect(
+    () => {
+      exmpleProducts()
+    }, []
+  )
+
   return (
     <div className="App">
       <Router>
@@ -50,7 +68,7 @@ function App() {
         <div className="body" style={{ marginTop: `${marginTop}px`, marginBottom: `${marginBottom}px` }}>
           <Switch>
             <Route exact path="/" component={() => {
-              return <Home data={dataToPrint} />
+              return <Home data={exmpleArr} />
             }} />
             <Route path="/catalog" component={() => {
               return <Catalog data={dataToPrint} sendIndex={sendIndex} scroll={scroll} />

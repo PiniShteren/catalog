@@ -4,6 +4,12 @@
 	align-items: center;
 	margin: 5vh 0vh 0vh 0vh;
 }
+#product-view-name {
+	/* transform: ; */
+	font-size: 5vh;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #head-des {
 	font-weight: bold;
 	font-size: 2.5vh;
@@ -14,7 +20,7 @@
 	background-size: contain;
 	width: 40%;
 	height: 40vh;
-	margin: 3% 0% 3% 0%;
+	margin: 10% 0% 10% 0%;
 }
 .details {
 	display: flex;
